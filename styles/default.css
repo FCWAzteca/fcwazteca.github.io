@@ -171,6 +171,13 @@ footer {
     justify-content: center;
 }
 
+div.foot_side {
+    display: flex;
+    flex-basis: 25%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
 div.contact {
     display: flex;
     flex-basis: 50%;
@@ -297,10 +304,5 @@ div.contact a:hover {
         --secondary-color: #000000;
         --tertiary-color: #ff1493;
         --quaternary-color: #252525;
-    }
-    
-    nav ul li a.btn_set:hover div.btn_lang {
-        background-color: #000000;
-        color: #ffffff;
     }
 }
