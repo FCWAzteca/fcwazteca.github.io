@@ -114,7 +114,7 @@ nav ul li a.btn_set {
     justify-content: center;
 }
 
-nav ul li a.btn_set div.btn_lang {
+ul li a.btn_set div.btn_lang {
     font-size: 3vh;
     background-color: var(--tertiary-color);
     border: 2px solid var(--primary-color);
@@ -171,13 +171,6 @@ footer {
     justify-content: center;
 }
 
-div.foot_side {
-    display: flex;
-    flex-basis: 25%;
-    flex-grow: 0;
-    flex-shrink: 0;
-}
-
 div.contact {
     display: flex;
     flex-basis: 50%;
@@ -205,6 +198,31 @@ div.contact a i {
 
 div.contact a:hover {
     color: var(--tertiary-color);
+}
+
+div.foot_side {
+    display: flex;
+    flex-basis: 25%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bolder;
+}
+
+div.foot_side ul.nav_menu {
+    list-style: none;
+}
+
+div.foot_side ul.nav_menu li.btn_set a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+div.foot_side ul.nav_menu li.btn_set a.btn_set div.btn_lang {
+    flex-basis: calc(10vh * .7);
+    height: 2.33vh;
+    font-size: 2.33vh;
 }
 
 @media screen and (min-width: 751px) and (max-width: 1000px) {
@@ -304,5 +322,28 @@ div.contact a:hover {
         --secondary-color: #000000;
         --tertiary-color: #ff1493;
         --quaternary-color: #252525;
+    }
+
+    ul li a {
+        color: var(--tertiary-color);
+    }
+
+    nav ul li a.btn_set div.btn_lang {
+        border: 2px solid var(--tertiary-color);
+        background-color: var(--secondary-color);
+    }
+
+    nav ul li a.btn_set:hover div.btn_lang  {
+        background-color: var(--quaternary-color);
+        border: 2px solid #ffffff;
+        color: #ffffff;
+    }
+
+    nav ul li a:hover {
+        color: var(--secondary-color);
+    }
+
+    nav ul li a.btn_set:hover {
+        background-color: var(--secondary-color);
     }
 }
