@@ -109,17 +109,17 @@ nav .nav_menu.set_expand li.set_option {
 
 nav ul li a.btn_set {
     height: 100%;
-    width: 100%;
+    flex-basis: 100%;
     align-items: center;
     justify-content: center;
 }
 
 ul li a.btn_set div.btn_lang {
-    font-size: 3vh;
+    font-size: 2.25vh;
     background-color: var(--tertiary-color);
     border: 2px solid var(--primary-color);
     border-radius: 2vh;
-    height: 3vh;
+    height: fit-content;
     flex-basis: 70%;
     flex-grow: 0;
     flex-shrink: 0;
@@ -202,7 +202,7 @@ div.contact a:hover {
 
 div.foot_side {
     display: flex;
-    flex-basis: 25%;
+    flex-basis: 20%;
     flex-grow: 0;
     flex-shrink: 0;
     align-items: center;
@@ -211,18 +211,17 @@ div.foot_side {
 }
 
 div.foot_side ul.nav_menu {
+    display: flex;
+    justify-content: flex-end;
     list-style: none;
+    flex-basis: 100%;
+
 }
 
 div.foot_side ul.nav_menu li.btn_set a {
+    display: none;
     color: #ffffff;
     text-decoration: none;
-}
-
-div.foot_side ul.nav_menu li.btn_set a.btn_set div.btn_lang {
-    flex-basis: calc(10vh * .7);
-    height: 2.33vh;
-    font-size: 2.33vh;
 }
 
 @media screen and (min-width: 751px) and (max-width: 1000px) {
@@ -313,6 +312,10 @@ div.foot_side ul.nav_menu li.btn_set a.btn_set div.btn_lang {
 
     footer {
         height: 7.5vh;
+    }
+
+    div.foot_side ul.nav_menu li.btn_set a {
+        display: initial;
     }
 }
 
