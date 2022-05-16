@@ -145,6 +145,10 @@ h1,h2 {
     min-width: 0;
 }
 
+h2.mob {
+    display: none;
+}
+
 h3,h4 {
     display: inherit;
     flex-basis: 100%;
@@ -304,6 +308,14 @@ div.foot_side ul.nav_menu li.btn_set a {
     nav .nav_menu.nav_expand li.nav_option {
         flex-basis: 100%;
         transition: flex-basis 250ms ease-in-out;
+    }
+
+    h1.desk {
+        display: none;
+    }
+
+    h2.mob {
+        display: initial;
     }
 
     div.main {
