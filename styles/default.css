@@ -315,7 +315,7 @@ div.foot_side ul.nav_menu li.btn_set a {
     }
 
     h2.mob {
-        display: initial;
+        display: inherit;
     }
 
     div.main {
@@ -326,8 +326,13 @@ div.foot_side ul.nav_menu li.btn_set a {
         height: 7.5vh;
     }
 
+    div.foot_side ul.nav_menu li.btn_set {
+        flex-basis: 70%;
+    }
+
     div.foot_side ul.nav_menu li.btn_set a {
         display: initial;
+        text-align: center;
     }
 }
 
