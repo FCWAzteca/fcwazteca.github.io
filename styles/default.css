@@ -124,6 +124,7 @@ ul li a.btn_set div.btn_lang {
     flex-grow: 0;
     flex-shrink: 0;
     justify-content: center;
+    padding: 1px 0 0 0;
 }
 
 nav ul li a.btn_set:hover div.btn_lang {
@@ -258,11 +259,10 @@ div.foot_left ul.nav_menu {
 
 li.btn_set {
     flex-basis: 15%;
+    text-align: center;
 }
-
 li.btn_set a {
     color: #ffffff;
-    text-align: center;
     text-decoration: none;
 }
 
@@ -367,12 +367,7 @@ li.btn_set a {
     }
 
     li.btn_set {
-        flex-basis: 3%;
-    }
-
-    li.btn_set a {
-        display: initial;
-        text-align: center;
+        flex-basis: 35%;
     }
 }
 
