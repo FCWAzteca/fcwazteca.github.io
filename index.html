@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link id="page_style" rel="stylesheet" href="../styles/default.css">
-    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+    <link id="page_style" rel="stylesheet" href="./styles/default.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
     <meta name="description" content="FCW Azteca is a family soccer club built to instill responsibility and respect in our players while training them to compete at a high level.">
     <meta name="keywords" content="Azteca, Aztecas, Club, FC, Futbol, Kansas, SCSA, Soccer, Sporting, Stryker, Team, United, Wichita, WUFC, WRSA">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../scripts/main.js"></script>
+    <script src="./scripts/main.js"></script>
     <script src="https://kit.fontawesome.com/13bbe31397.js" crossorigin="anonymous"></script>
     <title>FC Wichita Azteca</title>
 </head>
@@ -23,8 +23,8 @@
                         <i class="fa-solid fa-futbol"></i>
                     </a>
                     <a href="">
-                        <h1 class="desk">Home</h1>
-                        <h2 class="mob">FCW Azteca</h2>
+                        <h1 id="desk">Home</h1>
+                        <h2 id="mob">FCW Azteca</h2>
                     </a>
                     <a href="javascript:void(0);" class="icon" onclick="showNav()">
                         <i class="fa fa-bars"></i>
@@ -82,7 +82,8 @@
                 <ul class="nav_menu">
                     <li class="btn_set">
                         <a href="./pages/index-esp.html" class="btn_set">
-                            <div class="btn_lang">ES</div>
+                            <div class="btn_lang" id="abb">ES</div>
+                            <div class="btn_lang" id="long">ESPAÑOL</div>
                         </a>
                     </li>
                 </ul>
