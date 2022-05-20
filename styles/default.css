@@ -150,7 +150,7 @@ h1,h2 {
     min-width: 0;
 }
 
-h2#mob {
+#mob {
     display: none;
 }
 
