@@ -14,7 +14,6 @@ body {
     background-color: var(--primary-color);
     height: 100%;
     margin: 0;
-    min-height: 100%;
     width: 100%;
     display: flex;
     flex-grow: 0;
