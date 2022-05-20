@@ -5,6 +5,10 @@
     --quaternary-color: #720a14;
 }
 
+ html {
+     height: 100%;
+ }
+
 body {
     background-color: var(--primary-color);
     height: 100%;
