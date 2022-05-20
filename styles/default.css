@@ -1,11 +1,8 @@
-:root {
+ :root {
     --primary-color: #ffffff;
     --secondary-color: #CE1125;
     --tertiary-color: #006847;
     --quaternary-color: #720a14;
-}
-html {
-    height: -webkit-fill-available;
 }
 
 body {
@@ -13,9 +10,10 @@ body {
     height: 100%;
     margin: 0;
     min-height: 100%;
-    min-height: -webkit-fill-available;
     width: 100%;
     display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -23,6 +21,8 @@ body {
 header {
     background-color: var(--secondary-color);
     flex-basis: 10%;
+    flex-grow: 0;
+    flex-shrink: 0;
     margin: 0;
     display: flex;
     font-weight: bolder;
@@ -32,6 +32,8 @@ header {
 nav {
     height: 100%;
     flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
     display: flex;
     flex-direction: row;
     font-size: 5vh;
@@ -45,6 +47,8 @@ nav ul {
     margin: 0;
     padding: 0;
     flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
     list-style: none;
     min-width: 0;
 }
@@ -67,6 +71,8 @@ nav ul li a {
     align-self: center;
     color: var(--primary-color);
     flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
     height: 100%;
     text-decoration: none;
     white-space: nowrap;
@@ -107,13 +113,15 @@ nav .nav_menu.teams_expand li:not(.nav_teams) {
 }
 
 nav .nav_menu.teams_expand li.nav_teams:not(.nav_option) {
-    flex-basis:  calc((100% - (100% - 11vh)/4 - 11vh)/5);
+    flex-basis: calc((100% - (100% - 11vh)/4 - 11vh)/5);
     transition: flex-basis 250ms ease-in-out;
 }
 
 nav ul li a.btn_set {
     height: 100%;
     flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
     align-items: center;
     justify-content: center;
 }
@@ -157,6 +165,8 @@ h1,h2 {
 h3,h4 {
     display: inherit;
     flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
     font-size: 3vh;
     margin: 0;
     padding: 0;
@@ -169,12 +179,16 @@ h3,h4 {
 
 div.main {
     flex-basis: 82.5%;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 footer {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     flex-basis: 7.5%;
+    flex-grow: 0;
+    flex-shrink: 0;
     margin: 0;
     width: 100%;
     display: flex;
