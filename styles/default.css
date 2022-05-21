@@ -449,3 +449,9 @@ li.btn_set:hover a div.btn_lang#long {
         background-color: var(--secondary-color);
     }
 }
+
+ @media screen and (-webkit-min-device-pixel-ratio: 0) {
+     html {
+         height: 98%;
+     }
+ }
