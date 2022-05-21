@@ -14,7 +14,6 @@ body {
     background-color: var(--primary-color);
     height: 100%;
     margin: 0;
-    min-height: 100%;
     width: 100%;
     display: flex;
     flex-grow: 0;
@@ -450,3 +449,9 @@ li.btn_set:hover a div.btn_lang#long {
         background-color: var(--secondary-color);
     }
 }
+
+ @media screen and (-webkit-min-device-pixel-ratio: 0) {
+     html {
+         height: 98%;
+     }
+ }
