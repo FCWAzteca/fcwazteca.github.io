@@ -58,7 +58,7 @@ nav ul {
 }
 
 nav ul li {
-    flex-basis: calc((100% - 11vh)/4);
+    flex-basis: calc((100%)/3);
     flex-grow: 0;
     flex-shrink: 0;
     height: 100%;
@@ -84,7 +84,7 @@ nav ul li a {
 }
 
 nav ul li.active {
-    flex-basis:  calc((100% - 11vh)/4);
+    flex-basis:  calc((100%)/3);
     flex-grow: 0;
     flex-shrink: 0;
     background-color: var(--quaternary-color);
@@ -117,7 +117,7 @@ nav .nav_menu.teams_expand li:not(.nav_teams) {
 }
 
 nav .nav_menu.teams_expand li.nav_teams:not(.nav_option) {
-    flex-basis: calc((100% - (100% - 11vh)/4 - 11vh)/5);
+    flex-basis: calc((100% - (100% - 11vh)/3 - 11vh)/4);
     transition: flex-basis 250ms ease-in-out;
 }
 
@@ -182,7 +182,38 @@ h3,h4 {
 }
 
 div.main {
+    display: flex;
     flex-basis: 82.5%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: center;
+}
+
+div.content {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 90%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    align-content: center;
+    justify-content: space-around;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#title {
+    width: 100%;
+    flex-basis: 10%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 10vh;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    flex-basis: 80%;
     flex-grow: 0;
     flex-shrink: 0;
 }
@@ -296,18 +327,6 @@ li.btn_set a {
     text-decoration: none;
 }
 
-li.btn_set a div.btn_lang#long {
-    display: none;
-}
-
-li.btn_set:hover a div.btn_lang#abb {
-    display: none;
-}
-
-li.btn_set:hover a div.btn_lang#long {
-    display: initial;
-}
-
 @media screen and (min-width: 751px) and (max-width: 1000px) {
     h1, h2 {
         font-size: 4vh;
@@ -417,7 +436,7 @@ li.btn_set:hover a div.btn_lang#long {
         display: inherit;
     }
 }
-
+/*
 @media (prefers-color-scheme: dark) {
     :root {
         --primary-color: #535353;
@@ -449,7 +468,7 @@ li.btn_set:hover a div.btn_lang#long {
         background-color: var(--secondary-color);
     }
 }
-
+*/
  @media screen and (-webkit-min-device-pixel-ratio: 0) {
      html {
          height: 98%;
