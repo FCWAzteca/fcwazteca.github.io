@@ -196,19 +196,21 @@ div.content {
     flex-grow: 0;
     flex-shrink: 0;
     align-content: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     overflow-x: hidden;
     overflow-y: auto;
 }
 
 #title {
+    display: flex;
     width: 100%;
     flex-basis: 10%;
     flex-grow: 0;
     flex-shrink: 0;
     font-size: 10vh;
     color: var(--secondary-color);
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 iframe {
@@ -347,6 +349,10 @@ li.btn_set a {
         font-size: 2vh;
         word-wrap: normal;
     }
+
+    #title {
+        font-size: 7vh;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -434,6 +440,10 @@ li.btn_set a {
 
     #mob {
         display: inherit;
+    }
+
+    #title {
+        font-size: 5vh;
     }
 }
 /*
