@@ -21,3 +21,16 @@ function showTeams() {
     }
     console.log("main.showTeams(): Updated className: " + x.className)
 }
+
+
+function getContent() {
+    elementId="#article";
+    contentLocation= "https://www.wichitaunitedfc.com/post/wufc-and-fc-wichita-join-forces";
+    console.log('Function "getContent" inputs: ' + elementId + ', ' + contentLocation)
+    if (!elementId.startsWith("#")) {
+        elementId = "#" + elementId;
+        console.log("Updated elementId to " + elementId);
+    }
+
+    $(elementId).load(contentLocation)
+}
